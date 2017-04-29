@@ -1,13 +1,12 @@
 use std::io::prelude::*;
 use std::fs::File;
 use std::env;
-use std::io::BufReader;
 
 // extern crate time;
 // use time::PreciseTime;
 
-use std::time::Instant;
-// use std::time::{Duration, SystemTime, Instant};
+// use std::time::Instant;
+use std::time::{Duration, SystemTime, Instant};
 
 fn main() {
 	//let mut f = io::BufReader::new(try!(fs::File::open("input.txt")));
@@ -36,13 +35,7 @@ fn main() {
 			let mut entropy: f32 = 0.0;
 			let mut histogram = [0; 256];
 			
-			//let mut buf = String::new();
-			// let mut buf = [0; 65536];
-			
-			let r = BufReader::new(f);
-			
-			for b in r.bytes() {
-			// for b in f.bytes() {
+			for b in f.bytes() {
 				
 				histogram.get_mut(b.unwrap() as usize).map(|v| *v += 1);
 				t += 1;

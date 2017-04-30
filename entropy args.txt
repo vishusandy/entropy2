@@ -1,0 +1,1 @@
+"C:\code\lang\Rust\proj\entropy2\xargs.txt" "C:\code\lang\Rust\proj\entropy2\aaa.txt" "C:\code\lang\Rust\proj\entropy2\alphabet.txt" "C:\code\lang\Rust\proj\entropy2\c.txt" "C:\code\lang\Rust\proj\entropy2\html.txt" "C:\code\lang\Rust\proj\entropy2\random.txt"
